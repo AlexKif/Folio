@@ -1,3 +1,130 @@
 .header {
-  background: red;
+  &-photo {
+    background: url("/assets/images/header-bg.jpg") no-repeat center center;
+    background-size: cover;
+    height: 350px;
+    color: white;
+    padding-top: 70px;
+    &__text {
+      text-transform: uppercase;
+      font-family: 'Bebas Neue', cursive;
+      p {
+        font-size: 54px;
+        line-height: 39px;
+        margin-bottom: 0;
+      }
+      span {
+        font-size: 20px;
+        line-height: 20px;
+      }
+    }
+  }
+  &-menu {
+    background: #252222;
+    &__logo {
+      text-transform: uppercase;
+      font-size: 30px;
+      font-weight: bold;
+      color: #fff !important;
+    }
+    .navbar {
+      padding: 22px 0;
+    }
+  }
+}
+
+.custom {
+  &-nav {
+    &__item {
+      text-transform: uppercase;
+      &:hover {
+        border-bottom: 1px solid $menu-link-color;
+      }
+      .nav-link:hover {
+        color: $menu-link-color !important;
+      }
+    }
+    .active {
+      border-bottom: 1px solid $menu-link-color !important;
+      .nav-link {
+        color: $menu-link-color !important;
+      }
+    }
+  }
+  &-toggler {
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+  }
+  &-navbar {
+    justify-content: flex-end;
+    .custom-nav {
+      &__item {
+        .custom-nav-link {
+          color: #fff ;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  max-width: 180px;
+  width: 100%;
+  &-item {
+    width: 36px;
+    height: 36px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img  {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+@media screen and(min-width: 576px) {
+  .header-photo {
+    height: 450px;
+    padding-top: 110px;
+    p {
+      font-size: 70px;
+      line-height: 50px;
+    }
+    span {
+      font-size: 25px;
+    }
+  }
+}
+@media screen and(min-width: 768px) {
+  .header-photo {
+    height: 500px;
+    padding-top: 127px;
+    p {
+      font-size: 90px;
+      line-height: 65px;
+    }
+    span {
+      font-size: 30px;
+    }
+  }
+}
+
+@media screen and(min-width: 992px) {
+  .navbar-wrapper {
+    display: flex;
+    max-width: 470px;
+    max-height: 40px;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .header-menu {
+    max-height: 99px;
+  }
 }

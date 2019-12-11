@@ -6,3 +6,4 @@ if (environment === 'development') {
     console.log('In PROD')
     module.exports = require('./config/webpack.prod.config.js');
 }
+

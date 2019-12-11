@@ -1,4 +1,10 @@
 import '@scss/main.scss'
+// import $ from 'jquery';
+//
+// $(".header").css("background", "yellow");
+
+// import jQuery from 'jquery'
+// window.$ = window.jQuery = jQuery;
 
 import { Header } from '@/app/header';
 import { Footer } from '@/app/footer';

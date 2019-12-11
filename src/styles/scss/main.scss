@@ -1,7 +1,21 @@
+$menu-link-color: #65ba99;
+
 @import '../../../node_modules/bootstrap/scss/bootstrap.scss';
 @import "./header/header";
+@import "./fonts";
+
+
+
+@media (min-width: 1200px) {
+    .container{
+        max-width: 960px;
+    }
+}
 
 .content {
     max-width: 1600px;
     width: 100%;
+    margin: 0 auto;
 }
+
+
