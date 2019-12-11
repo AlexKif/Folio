@@ -1,15 +1,31 @@
-$menu-link-color: #65ba99;
+$primaryColor: #65ba99;
 
 @import '../../../node_modules/bootstrap/scss/bootstrap.scss';
 @import "./header/header";
+@import "./portfolio/portfolio";
 @import "./fonts";
 
-
+* {
+    font-family: 'Bebas Neue', cursive;
+}
 
 @media (min-width: 1200px) {
     .container{
         max-width: 960px;
     }
+}
+
+.block-headline {
+    font-size: 48px;
+    margin-bottom: 0;
+    &:after {
+        content: "/";
+        margin-left: 5px;
+    }
+}
+
+.sub-headline {
+    font-size: 24px;
 }
 
 .content {

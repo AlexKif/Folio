@@ -1,5 +1,4 @@
 .header {
-  font-family: 'Bebas Neue', cursive;
   &-photo {
     background: url("/assets/images/header-bg.jpg") no-repeat center center;
     background-size: cover;
@@ -38,16 +37,16 @@
     &__item {
       text-transform: uppercase;
       &:hover {
-        border-bottom: 1px solid $menu-link-color;
+        border-bottom: 1px solid $primaryColor;
       }
       .custom-nav-link:hover {
-        color: $menu-link-color !important;
+        color: $primaryColor !important;
       }
     }
     .active {
-      border-bottom: 1px solid $menu-link-color;
+      border-bottom: 1px solid $primaryColor;
       .custom-nav-link {
-        color: $menu-link-color !important;
+        color: $primaryColor !important;
       }
     }
   }
