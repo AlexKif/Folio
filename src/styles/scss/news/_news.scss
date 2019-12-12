@@ -187,17 +187,17 @@
     }
   }
 
-  .post-wrap {
-    padding-left: 10px;
-  }
-
-  .post__headline {
-    margin: 24px 0 11px;
-    text-align: left;
-  }
-
-  .post__content {
-    margin: 18px 0;
+  .post {
+    &-wrap {
+      padding-left: 10px;
+    }
+    &__headline {
+      margin: 24px 0 11px;
+      text-align: left;
+    }
+    &__content {
+      margin: 18px 0;
+    }
   }
 }
 
