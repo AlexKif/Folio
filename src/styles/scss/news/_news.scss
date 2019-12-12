@@ -104,6 +104,11 @@
     color: #fff;
     font-size: 14px;
     margin: 0 6px 10px 0;
+    text-decoration: none;
+    &:hover {
+      color: #fff;
+      text-decoration: inherit;
+    }
     &_current {
       background: #e2534b;
     }
@@ -149,3 +154,50 @@
     }
   }
 }
+
+@media screen and(min-width: 992px){
+  .news {
+    padding: 78px 0;
+    &__headline {
+      text-align: center;
+      color: #252222;
+      margin-bottom: 70px !important;
+    }
+  }
+
+  .tags {
+    &-wrap {
+      padding-left: 0;
+      margin: 0;
+    }
+    &-container {
+      margin: 25px 0 51px;
+    }
+    &__item {
+      padding: 0 11px;
+      height: 25px;
+      margin: 0 6px 10px 0;
+
+    }
+  }
+
+  .from-blog {
+    &__headline {
+      margin-bottom: 20px;
+    }
+  }
+
+  .post-wrap {
+    padding-left: 10px;
+  }
+
+  .post__headline {
+    margin: 24px 0 11px;
+    text-align: left;
+  }
+
+  .post__content {
+    margin: 18px 0;
+  }
+}
+
