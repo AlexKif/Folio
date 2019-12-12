@@ -4,9 +4,10 @@ $primaryColor: #65ba99;
 @import "./header/header";
 @import "./portfolio/portfolio";
 @import "./lorem/lorem";
+@import "./news/news";
 @import "./fonts";
 
-* {
+body {
     font-family: 'Bebas Neue', cursive;
 }
 
