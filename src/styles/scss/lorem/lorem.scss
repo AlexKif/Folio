@@ -1,0 +1,67 @@
+.lorem {
+  background: url("/assets/images/lorem/lorem-bg.png") no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  height: 250px;
+  padding-top: 60px;
+  &-text {
+    text-align: center;
+    font-size: 28px;
+    text-transform: uppercase;
+    line-height: 28px;
+    &:before {
+      content: "”";
+      position: relative;
+      font-size: 50px;
+      top: 0;
+      right: 14px;
+      line-height: 0;
+    }
+    &:after {
+      content: "„";
+      position: relative;
+      font-size: 50px;
+      top: 10px;
+      left: 15px;
+      line-height: 0;
+    }
+  }
+  &-autor {
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 24px;
+    margin-bottom: 0;
+    padding: 13px 65px 0 0;
+  }
+}
+
+@media screen and(min-width: 576px){
+  .lorem {
+    padding-top: 100px;
+  }
+}
+
+@media screen and(min-width: 992px){
+  .lorem {
+    height: 300px;
+    padding-top: 140px;
+    &-text {
+      font-size: 36px;
+      line-height: 28px;
+      &:before {
+        font-size: 100px;
+        top: 20px;
+        right: 20px;
+      }
+      &:after {
+        font-size: 100px;
+        top: 0;
+        left: 45px;
+      }
+    }
+    &-autor {
+      font-size: 24px;
+      padding: 13px 65px 0 0;
+    }
+  }
+}
