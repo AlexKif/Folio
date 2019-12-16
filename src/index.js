@@ -1,11 +1,10 @@
 import '@scss/main.scss'
-// import jQuery from 'jquery'
-
-// $(".header").css("background", "yellow");
-// window.$ = window.jQuery = jQuery;
-
-
-
+import 'bootstrap';
+// var $ = require('jquery');
+//
+// $(document).ready(function(){
+//     alert(jQuery.fn.jquery);
+// });
 // function renderPortfolioItems() {
 //     for (let i = 1; i<=18; i++) {
 //         const getFlow = document.querySelector(".flow");
